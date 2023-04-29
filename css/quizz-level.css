@@ -1,0 +1,68 @@
+.quizz-level{
+    display: flex;
+    width: 100%;
+    margin : 72px 0 8px 0;
+    gap:0;
+}
+
+.quizz-level .level{
+    flex: 1;
+    padding : 16px 8px;
+    height: calc(500px - 72px);
+    transition: all 0.4s ease-in-out;
+}
+.quizz-level .level:hover{
+    flex: 2;
+}
+.quizz-level .level:nth-child(1){
+    background: var(--mq-primary-light);
+}
+.quizz-level .level:nth-child(2){
+    background: var(--mq-primary);
+}
+.quizz-level .level:nth-child(3){
+    background: var(--mq-primary-dark);
+}
+.quizz-level .level .level-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.level-container .level-ico{
+
+}
+.level-container .level-text{
+    scale: 0;
+    color : #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+.level:hover .level-container .level-text{
+    scale : 1;
+}
+.level-container .level-action{
+    scale: 0;
+    transition: all 0.3s ease-in-out;
+}
+.level:hover .level-container .level-action{
+    scale: 1;
+}
+.level-container .level-action button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 8px;
+    color: #fff;
+}
+.level:nth-child(1) .level-action button{
+    background: var(--mq-primary-dark);
+}
+.level:nth-child(2) .level-action button{
+    background: var(--mq-primary-light);
+}
+.level:nth-child(3) .level-action button{
+    background: var(--mq-primary);
+}

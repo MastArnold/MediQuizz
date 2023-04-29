@@ -1,0 +1,179 @@
+body{
+    overflow-x: hidden;
+}
+body *{
+    box-sizing:border-box !important;
+}
+.quizz-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(500px - 72px);
+    margin : 72px 0 12px 0; 
+}
+.quizz{
+    display: grid;
+    place-items: center;
+    gap : 24px;
+    min-width: 100%;
+    max-width: 100%;
+    margin : 0 45px 0 0;
+    padding : 0 12px;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+.quizz .quizz-question{
+    position: relative;
+    padding : 28px 28px 14px 28px;
+    margin : 0;
+    background: #fff;
+    border : 2px solid var(--mq-primary);
+    border-radius: 9px;
+}
+.quizz .quizz-question::before{
+    position: absolute;
+    bottom : -14px;
+    left : calc(50% - 15px);
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: var(--mq-primary);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.quizz-question .question-index{
+    position: absolute;
+    left : -16px;
+    top : -20px;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    background: var(--mq-primary);
+    border : 1px solid transparent;
+    border-radius: 50%;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color : #fff;
+}
+.quizz-question .question-title{
+    position: absolute;
+    right: 8px;
+    top:3px;
+    font-size: 13px;
+    color : var(--mq-primary)
+}
+.quizz-question .question-content{
+    width: 100%;
+    margin : 14px 0;
+    padding : 8px;
+    font-size: 14px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.quizz-question .question-action{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : 8px 0;
+}
+.quizz-question .question-action button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 8px;
+}
+
+/**     ANSWER      **/
+.quizz .quizz-answer{
+    position: relative;
+    width: 100%;
+    margin : 0;
+    padding : 28px;
+    background: #fff;
+    box-sizing: border-box;
+    border : 2px solid var(--mq-primary);
+    border-radius: 8px;
+}
+.quizz-answer .answer-content{
+    max-width: 100%;
+    padding : 16px;
+}
+.quizz-answer .answer-content input{
+    outline: 0;
+}
+.quizz-answer .answer-action{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.quizz-answer .answer-action .answer-timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 6px;
+    font-size: 22px;
+    color : var(--mq-primary-light)
+}
+
+/** TYPE DE ANSWER **/
+.quizz.quizz-checkbox .answer-content{
+    display: flex;
+    flex-direction: column;
+    gap : 8px;
+}
+.quizz.quizz-checkbox .answer-content .box-checkbox{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap : 9px;
+    cursor: pointer;
+    padding : 12px;
+    background: var(--mq-primary-light);
+    color : var(--mq-primary-dark);
+    border: 1px solid transparent;
+    border-radius: 9px;
+    transition: all 0.3s ease-in-out;
+}
+.quizz.quizz-checkbox .answer-content .box-checkbox.selected{
+    background: var(--mq-primary);
+    color : #fff;
+}
+
+.quizz.quizz-checkbox-qcu .answer-content{
+    display: flex;
+    flex-direction: column;
+    gap : 8px;
+}
+.quizz.quizz-checkbox-qcu .answer-content .box-checkbox{
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap : 9px;
+    cursor: pointer;
+    padding : 12px;
+    background: var(--mq-primary-light);
+    color : var(--mq-primary-dark);
+    border: 1px solid transparent;
+    border-radius: 9px;
+    transition: all 0.3s ease-in-out;
+}
+.quizz.quizz-checkbox-qcu .answer-content .box-checkbox *{
+    transition: all 0.3s ease-in-out;
+}
+.quizz.quizz-checkbox-qcu .answer-content .box-checkbox i{
+    transform: translateX(-35px);
+}
+.quizz.quizz-checkbox-qcu .answer-content .box-checkbox div{
+    transform: translateX(-30px);
+}
+.quizz.quizz-checkbox-qcu .answer-content .box-checkbox.selected{
+    background: var(--mq-primary);
+    color : #fff;
+}
+.quizz.quizz-checkbox-qcu .answer-content .box-checkbox.selected *{
+    transform: translateX(0);
+}

@@ -1,0 +1,109 @@
+.mi{
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mi-logo{
+    content: url("../assets/svg/logo/logo.svg");
+}
+
+.mi-diplome-1{
+    content: url("../assets/svg/diploma-svgrepo-com\ \(4\).svg");
+}
+.mi-diplome-2{
+    content: url("../assets/svg/diploma-svgrepo-com\ \(6\).svg");
+}
+.mi-board-1{
+    content : url("../assets/svg/education-learning-4-svgrepo-com.svg");
+}
+.mi-board-2{
+    content : url("../assets/svg/university-lecture-svgrepo-com.svg");
+}
+.mi-copybook-and-pen{
+    content : url("../assets/svg/education-learning-19-svgrepo-com.svg");
+}
+.mi-student-1{
+    content: url("../assets/svg/education-learning-28-svgrepo-com.svg");
+}
+.mi-student-2{
+    content: url("../assets/svg/mortarboard-graduate-svgrepo-com.svg");
+}
+.mi-student-3{
+    content: url("../assets/svg/mortarboard-graduate-svgrepo-com\ \(1\).svg");
+}
+.mi-cup-1{
+    content : url("../assets/svg/university-musem-svgrepo-com.svg");
+}
+.mi-loupe-1{
+    content : url("../assets/svg/magnifying-glass-9-svgrepo-com.svg");
+}
+/**********/
+
+.mi-diplome-1.light{
+    content: url("../assets/svg-light/diploma-svgrepo-com\ \(4\).svg");
+}
+.mi-diplome-2.light{
+    content: url("../assets/svg-light/diploma-svgrepo-com\ \(6\).svg");
+}
+.mi-board-1.light{
+    content : url("../assets/svg-light/education-learning-4-svgrepo-com.svg");
+}
+.mi-board-2.light{
+    content : url("../assets/svg-light/university-lecture-svgrepo-com.svg");
+}
+.mi-copybook-and-pen.light{
+    content : url("../assets/svg-light/education-learning-19-svgrepo-com.svg");
+}
+.mi-student-1.light{
+    content: url("../assets/svg-light/education-learning-28-svgrepo-com.svg");
+}
+.mi-student-2.light{
+    content: url("../assets/svg-light/mortarboard-graduate-svgrepo-com.svg");
+}
+.mi-student-3.light{
+    content: url("../assets/svg-light/mortarboard-graduate-svgrepo-com\ \(1\).svg");
+}
+.mi-cup-1.light{
+    content : url("../assets/svg-light/university-musem-svgrepo-com.svg");
+}
+.mi-loupe-1.light{
+    content : url("../assets/svg-light/magnifying-glass-9-svgrepo-com.svg");
+}
+
+/**********/
+
+.mi-heart{
+    content: url("../assets/svg/quizz-menu/health-monitoring-svgrepo-com.svg");
+}
+.mi-heart.light{
+    content: url("../assets/svg-light/quizz-menu/health-monitoring-svgrepo-com.svg");
+}
+
+.mi-medecine-bear{
+    content : url("../assets/svg/quizz-level/animal-avatar-bear-svgrepo-com.svg");
+}
+.mi-afro-guy{
+    content: url("../assets/svg/quizz-level/afro-avatar-male-svgrepo-com.svg");
+}
+.mi-heisenberg{
+    content: url("../assets/svg/quizz-level/avatar-bad-breaking-svgrepo-com.svg");
+}
+
+.mi-send{
+    content: url("../assets/svg/quizz-level/send-svgrepo-com\ \(5\).svg");
+}
+
+.mi-clock-1{
+    content: url("../assets/svg/quizz/clock-svgrepo-com\ \(19\).svg");
+}
+.mi-checkmark{
+    content: url("../assets/svg/quizz/accept-checklist-checkmark-svgrepo-com.svg");
+}
